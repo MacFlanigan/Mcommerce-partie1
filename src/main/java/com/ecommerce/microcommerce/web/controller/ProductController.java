@@ -112,5 +112,10 @@ public class ProductController {
         return productDao.chercherUnProduitCher(400);
     }
 
+    @GetMapping("test/produitsTries")
+    public List<Product> trierProduitsParOrdreAlphabetique() {
+        return productDao.findAllByOrderByNom();
+    }
+
 
 }
