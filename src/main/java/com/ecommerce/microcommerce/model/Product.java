@@ -16,10 +16,10 @@ public class Product {
     @GeneratedValue
     private int id;
 
-    @Length(min=3, max=20, message = "Nom trop long ou trop court. Et oui messages sont plus stylés que ceux de Spring")
+    @Length(min = 3, max = 20, message = "Nom trop long ou trop court. Et oui messages sont plus stylés que ceux de Spring")
     private String nom;
 
-    @Min(value = 1)
+    @Min(value = 0)
     private int prix;
 
     //information que nous ne souhaitons pas exposer
